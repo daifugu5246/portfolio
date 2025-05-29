@@ -14,7 +14,7 @@ const experience = ref([
             "Implemented queueing functions, scheduler and email notification system",
             "Collaborated with DevOps teams for production deployment"
         ],
-        tools: [{ name: 'Vue.js', icon: '../assets/tools/vue.svg' }, { name: 'Laravel', icon: '../assets/laravel.png' }, { name: 'MySQL', icon: '../assets/mysql.png' }],
+        tools: [{ name: 'Vue.js', icon: '../assets/vue.svg' }, { name: 'Laravel', icon: '../assets/laravel.png' }, { name: 'MySQL', icon: '../assets/mysql.png' }],
     },
     {
         title: 'Financial Article Writing using Artificial Intelligence',
