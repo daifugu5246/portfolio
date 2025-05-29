@@ -10,7 +10,7 @@
             <h2>Computer Engineering @ KMITL</h2>
             <a href="mailto:patipat.kd@gmail.com" target="_blank"><button class="btn">Hire me<span><font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" /></span></button></a>
         </div>
-        <img class="profile" src="../assets/profile.jpg" alt="Profile Picture" />
+        <img class="profile" src="/assets/profile.jpg" alt="Profile Picture" />
     </div>
 </template>
 

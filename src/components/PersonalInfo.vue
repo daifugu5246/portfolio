@@ -16,7 +16,7 @@
             <hr>
             <ul>
                 <li class="edu-li">
-                    <img class="kmitl-logo" src="../assets/kmitl.png" alt="KMITL Logo" />
+                    <img class="kmitl-logo" src="/assets/kmitl.png" alt="KMITL Logo" />
                     <div>
                         <h3>King Mongkut's Institute of Technology Ladkrabang</h3>
                         <p>Computer Engineering</p>
@@ -25,7 +25,7 @@
                     </div>
                 </li>
                 <li class="edu-li">
-                    <img class="ayw-logo" src="../assets/ayw.png" alt="High School Logo" />
+                    <img class="ayw-logo" src="/assets/ayw.png" alt="High School Logo" />
                     <div>
                         <h3>Ayutthaya Wittayalai School</h3>
                         <p>Science-Math Program</p>

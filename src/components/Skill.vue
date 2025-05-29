@@ -3,26 +3,26 @@ import { ref } from 'vue';
 import ListPill from './Listpill.vue';
 
 const languages = ref([
-    { name: 'Python', icon: '../assets/python.png' },
-    { name: 'JavaScript', icon: '../assets/js.png' },
-    { name: 'TypeScript', icon: '../assets/typescript.png' },
-    { name: 'PHP', icon: '../assets/php.png' },
-    { name: 'C#', icon: '../assets/c-sharp.png' },
-    { name: 'C/C++', icon: '../assets/cpp.png' },
-    { name: 'Java', icon: '../assets/java.png' }
+    { name: 'Python', icon: '/assets/languages/python.png' },
+    { name: 'JavaScript', icon: '/assets/languages/js.png' },
+    { name: 'TypeScript', icon: '/assets/languages/typescript.png' },
+    { name: 'PHP', icon: '/assets/languages/php.png' },
+    { name: 'C#', icon: '/assets/languages/c-sharp.png' },
+    { name: 'C/C++', icon: '/assets/languages/cpp.png' },
+    { name: 'Java', icon: '/assets/languages/java.png' }
 ]);
 
 const tools = ref([
-    { name: 'React', icon: '../assets/react.png' },
-    { name: 'Vue.js', icon: '../assets/vue.svg' },
-    { name: 'Bootstrap', icon: '../assets/bootstrap.png' },
-    { name: 'Laravel', icon: '../assets/laravel.png' },
-    { name: 'Express.js', icon: '../assets/expressjs.png' },
-    { name: 'MongoDB', icon: '../assets/mongodb.svg' },
-    { name: 'MySQL', icon: '../assets/mysql.png' },
-    { name: 'Git', icon: '../assets/git.png' },
-    { name: 'Postman', icon: '../assets/postman.svg' },
-    { name: 'Docker', icon: '../assets/docker.png' }
+    { name: 'React', icon: '/assets/tools/react.png' },
+    { name: 'Vue.js', icon: '/assets/tools/vue.svg' },
+    { name: 'Bootstrap', icon: '/assets/tools/bootstrap.png' },
+    { name: 'Laravel', icon: '/assets/tools/laravel.png' },
+    { name: 'Express.js', icon: '/assets/tools/expressjs.png' },
+    { name: 'MongoDB', icon: '/assets/tools/mongodb.svg' },
+    { name: 'MySQL', icon: '/assets/tools/mysql.png' },
+    { name: 'Git', icon: '/assets/tools/git.png' },
+    { name: 'Postman', icon: '/assets/tools/postman.svg' },
+    { name: 'Docker', icon: '/assets/tools/docker.png' }
 ]);
 </script>
 
