@@ -2,6 +2,8 @@
 import Card from './Card.vue';
 import { ref } from 'vue';
 
+const base = ref(import.meta.env.BASE_URL)
+
 const experience = ref([
     {
         title: 'Full Stack Developer (Intern)',
@@ -14,7 +16,7 @@ const experience = ref([
             "Implemented queueing functions, scheduler and email notification system",
             "Collaborated with DevOps teams for production deployment"
         ],
-        tools: [{ name: 'Vue.js', icon: '/assets/tools/vue.svg' }, { name: 'Laravel', icon: '/assets/tools/laravel.png' }, { name: 'MySQL', icon: '/assets/tools/mysql.png' }],
+        tools: [{ name: 'Vue.js', icon: base.value + '/assets/tools/vue.svg' }, { name: 'Laravel', icon: base.value + '/assets/tools/laravel.png' }, { name: 'MySQL', icon: base.value + '/assets/tools/mysql.png' }],
     },
     {
         title: 'Financial Article Writing using Artificial Intelligence',
@@ -26,7 +28,7 @@ const experience = ref([
             "Implemented model training using Hugging Face Transformers library",
             "Evaluated performance of each fine-tuning method to identify optimal configurations"
         ],
-        tools: [{ name: 'Huggingface', icon: '/assets/tools/huggingface.png' }, { name: 'Pandas', icon: '/assets/tools/pandas.png' }],
+        tools: [{ name: 'Huggingface', icon: base.value + '/assets/tools/huggingface.png' }, { name: 'Pandas', icon: base.value + '/assets/tools/pandas.png' }],
     },
     {
         title: 'Masterpeach',
@@ -39,7 +41,7 @@ const experience = ref([
             "Conducted API testing using Postman",
             "Provided front-end developer support during integration testing"
         ],
-        tools: [{ name: 'Express.js', icon: '/assets/tools/expressjs.png' }, { name: 'MongoDB', icon: '/assets/tools/mongodb.svg' }],
+        tools: [{ name: 'Express.js', icon: base.value + '/assets/tools/expressjs.png' }, { name: 'MongoDB', icon: base.value + '/assets/tools/mongodb.svg' }],
         code: 'https://github.com/daifugu5246/masterpeach',
     },
     {
@@ -51,7 +53,7 @@ const experience = ref([
             "Implemented task prioritization (important) and completion tracking",
             "Stored data in browser's local storage"
         ],
-        tools: [{ name: 'React', icon: '/assets/tools/react.png' }, { name: 'Bootstrap', icon: '/assets/tools/bootstrap.png' }],
+        tools: [{ name: 'React', icon: base.value + '/assets/tools/react.png' }, { name: 'Bootstrap', icon: base.value + '/assets/tools/bootstrap.png' }],
         demo: 'https://daifugu5246.github.io/to-do-app/',
         code: 'https://github.com/daifugu5246/to-do-app',
     },
@@ -65,7 +67,7 @@ const experience = ref([
             "Implemented database models using Entity Framework as ORM solution",
             "Built complete system with MS SQL Server as database"
         ],
-        tools: [{ name: 'ASP.NET Core', icon: '/assets/tools/asp.png' }, { name: 'MS SQL', icon: '/assets/tools/mssql.png' }],
+        tools: [{ name: 'ASP.NET Core', icon: base.value + '/assets/tools/asp.png' }, { name: 'MS SQL', icon: base.value + '/assets/tools/mssql.png' }],
         code: 'https://github.com/daifugu5246/feelfood',
     },
 ]);

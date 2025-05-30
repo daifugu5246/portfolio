@@ -2,27 +2,29 @@
 import { ref } from 'vue';
 import ListPill from './Listpill.vue';
 
+const base = ref(import.meta.env.BASE_URL)
+
 const languages = ref([
-    { name: 'Python', icon: '/assets/languages/python.png' },
-    { name: 'JavaScript', icon: '/assets/languages/js.png' },
-    { name: 'TypeScript', icon: '/assets/languages/typescript.png' },
-    { name: 'PHP', icon: '/assets/languages/php.png' },
-    { name: 'C#', icon: '/assets/languages/c-sharp.png' },
-    { name: 'C/C++', icon: '/assets/languages/cpp.png' },
-    { name: 'Java', icon: '/assets/languages/java.png' }
+    { name: 'Python', icon: base.value + '/assets/languages/python.png' },
+    { name: 'JavaScript', icon: base.value + '/assets/languages/js.png' },
+    { name: 'TypeScript', icon: base.value + '/assets/languages/typescript.png' },
+    { name: 'PHP', icon: base.value + '/assets/languages/php.png' },
+    { name: 'C#', icon: base.value + '/assets/languages/c-sharp.png' },
+    { name: 'C/C++', icon: base.value + '/assets/languages/cpp.png' },
+    { name: 'Java', icon: base.value + '/assets/languages/java.png' }
 ]);
 
 const tools = ref([
-    { name: 'React', icon: '/assets/tools/react.png' },
-    { name: 'Vue.js', icon: '/assets/tools/vue.svg' },
-    { name: 'Bootstrap', icon: '/assets/tools/bootstrap.png' },
-    { name: 'Laravel', icon: '/assets/tools/laravel.png' },
-    { name: 'Express.js', icon: '/assets/tools/expressjs.png' },
-    { name: 'MongoDB', icon: '/assets/tools/mongodb.svg' },
-    { name: 'MySQL', icon: '/assets/tools/mysql.png' },
-    { name: 'Git', icon: '/assets/tools/git.png' },
-    { name: 'Postman', icon: '/assets/tools/postman.svg' },
-    { name: 'Docker', icon: '/assets/tools/docker.png' }
+    { name: 'React', icon: base.value + '/assets/tools/react.png' },
+    { name: 'Vue.js', icon: base.value + '/assets/tools/vue.svg' },
+    { name: 'Bootstrap', icon: base.value + '/assets/tools/bootstrap.png' },
+    { name: 'Laravel', icon: base.value + '/assets/tools/laravel.png' },
+    { name: 'Express.js', icon: base.value + '/assets/tools/expressjs.png' },
+    { name: 'MongoDB', icon: base.value + '/assets/tools/mongodb.svg' },
+    { name: 'MySQL', icon: base.value + '/assets/tools/mysql.png' },
+    { name: 'Git', icon: base.value + '/assets/tools/git.png' },
+    { name: 'Postman', icon: base.value + '/assets/tools/postman.svg' },
+    { name: 'Docker', icon: base.value + '/assets/tools/docker.png' }
 ]);
 </script>
 
