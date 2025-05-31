@@ -52,4 +52,14 @@ const props = defineProps({
     cursor: pointer;
 }
 
+@media (max-width: 600px) {
+    .icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .list-pill ul {
+        font-size: 1.1rem;
+    }
+}
 </style>

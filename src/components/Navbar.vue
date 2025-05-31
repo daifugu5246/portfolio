@@ -23,7 +23,7 @@
     align-items: center;
     padding: 1rem 2rem;
     width: 100%;
-    height: 150px;
+    height: 180px;
     z-index: 1;
 }
 
@@ -49,5 +49,21 @@
     text-shadow: #f1f1f1 0px 0px 20px;
     font-size: 1.6rem;
     transition: font-size 0.5s, color 0.3s;
+}
+
+@media (max-width: 600px){
+    .navbar-links a {
+        background: #060606;
+        padding: 5px 0px 5px 0px;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    .navbar-links a:hover {
+        color: #bb80ff;
+        text-shadow: #f1f1f1 0px 0px 20px;
+        font-size: 1.3rem;
+        transition: font-size 0.5s, color 0.3s;
+    }
 }
 </style>

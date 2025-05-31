@@ -30,7 +30,7 @@
                         <h3>Ayutthaya Wittayalai School</h3>
                         <p>Science-Math Program</p>
                         <p>2018-2020</p>
-                        <p>GPA: 3.78</p>
+                        <p>GPA: 3.80</p>
                     </div>
                 </li>
             </ul>
@@ -86,7 +86,6 @@ hr {
     flex-direction: column;
     row-gap: 20px;
     list-style: none;
-    font-size: 2rem;
     letter-spacing: 1px;
     line-height: 2rem;
     color: #f1f1f1;
@@ -133,6 +132,57 @@ hr {
     position: relative;
     width: 120px;
     height: 120px;
+}
+
+@media (max-width: 1600px) {
+    .about-me{
+        padding: 100px 150px 150px 150px;
+    }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+    .about-me{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .story {
+        grid-column: 1;
+    }
+    .story p{
+        text-align: center;
+    }
+    .education {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me{
+        padding: 30px 50px 150px 50px;
+    }
+
+    .story h1 {
+        font-size: 2.2rem;
+    }
+
+    .story p {
+        color: #f1f1f1;
+        font-size: 1.2rem;
+        line-height: 2.7rem;
+    }
+
+    .education h1 {
+        font-size: 2.2rem;
+    }
+
+    .edu-li{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 </style>

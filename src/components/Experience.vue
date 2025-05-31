@@ -87,7 +87,7 @@ const experience = ref([
 .exp {
     width: 100%;
     height: fit-content;
-    padding: 150px 300px 150px 300px;
+    padding: 30px 300px 150px 300px;
     z-index: 0;
 }
 
@@ -108,5 +108,41 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr));
     gap: 20px;
+}
+
+@media (max-width: 1600px) {
+    .exp{
+        padding: 30px 150px 150px 150px;
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+    .cards{
+        grid-template-columns: repeat(1, minmax(auto, 1fr));
+    }
+    .languages{
+        grid-column: 1;
+    }
+
+    .tools{
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .exp {
+        padding: 30px 50px 150px 50px;
+    }
+
+    .exp h1 {
+        font-size: 2.2rem;
+    }
 }
 </style>

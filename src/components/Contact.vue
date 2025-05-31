@@ -28,7 +28,7 @@ const gradeUrl = ref('https://drive.google.com/file/d/1hcAhMdRAlJpBnKLubs5DJgtiB
 .contact {
     width: 100%;
     height: fit-content;
-    padding: 150px 250px 50px 250px;
+    padding: 30px 250px 50px 250px;
     z-index: 0;
 }
 
@@ -106,5 +106,40 @@ const gradeUrl = ref('https://drive.google.com/file/d/1hcAhMdRAlJpBnKLubs5DJgtiB
     color: #f1f1f1;
     text-align: center;
     font-size: 0.8rem;
+}
+@media (max-width: 1600px) {
+    .contact{
+        padding: 30px 150px 150px 150px;
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 600px) {
+    .contact{
+        padding: 30px 50px 150px 50px;
+    }
+    .contact h1{
+        font-size: 2.2rem;
+    }
+    .contact-container{
+        font-size: 1.3rem;
+    }
+    .btn {
+        font-size: 1.1rem;
+    }
+
+    .btn span{
+        font-size: 1.1rem;
+    }
 }
 </style>

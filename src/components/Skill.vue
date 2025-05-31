@@ -48,10 +48,11 @@ const tools = ref([
 <style scoped>
 .skill {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     width: 100%;
     height: fit-content;
-    padding: 150px 300px 150px 300px;
+    padding: 30px 300px 150px 300px;
     z-index: 0;
 }
 
@@ -93,5 +94,44 @@ hr {
     color: #f1f1f1;
     font-size: 2rem;
 
+}
+
+@media (max-width: 1600px) {
+    .skill{
+        padding: 30px 150px 150px 150px;
+    }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+    .skill{
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+        row-gap: 20px;
+    }
+    .languages{
+        grid-column: 1;
+    }
+
+    .tools{
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .skill{
+        padding: 30px 50px 150px 50px;
+    }
+
+    .header h1{
+        font-size: 2.2rem;
+    }
+
+    .card h1{
+        font-size: 1.8rem;
+    }
 }
 </style>

@@ -164,4 +164,27 @@ hr {
     box-shadow: 0px 0px 20px #8e44e2;
     transition: 0.3s;
 }
+
+@media (max-width: 600px) {
+    .card h1 {
+        font-size: 1.8rem;
+    }
+
+    .card h2 {
+        font-size: 1.3rem;
+        color: #bb80ff;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+        color: #a6a6a6;
+    }
+    .card p {
+        font-size: 1.1rem;
+        margin: 5px 0 5px 0;
+    }
+    .tools h4 {
+        font-size: 1.3rem;
+    }
+}
 </style>

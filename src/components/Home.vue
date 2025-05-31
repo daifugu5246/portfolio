@@ -22,7 +22,7 @@
     position: relative;
     align-items: center;
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     padding: 250px 300px 150px 300px;
     z-index: 0;
 }
@@ -96,4 +96,93 @@
     transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+    .home{
+        padding: 150px 200px 
+    }
+    .home h1 {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .home h1 span {
+        font-size: 3.5rem;
+    }
+    .home-text h2{
+        font-size: 2rem;
+    }
+    .profile{
+        width: 300px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .home{
+        padding: 150px 200px 
+    }
+    .home h1 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .home h1 span {
+        font-size: 3rem;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+    .profile{
+        width: 280px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        padding: 150px;
+    }
+    .home-text{
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+    }
+    .home-text * {
+        text-align: center;
+    }
+    .home h1 {
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    .home h1 span {
+        font-size: 3.5rem;
+    }
+    .home-text h2{
+        font-size: 1.8rem;
+    }
+    .profile{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home{
+        padding: 150px 50px 150px 50px;
+    }
+    .home h1 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .home h1 span {
+        font-size: 2.5rem;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+    .profile{
+        width: 200px;
+    }
+}
 </style>
