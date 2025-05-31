@@ -4,12 +4,15 @@ const props = defineProps({
     items: {
         type: Array as () => { name: string; icon: string }[],
         required: true
+    },
+    justifyContent: {
+        type: String
     }
 });
 </script>
 <template>
     <div class="list-pill">
-        <ul>
+        <ul :style="{'justify-content': props.justifyContent}">
             <li v-for="item in props.items"><img class="icon" :src="item.icon"><p class="icon-text">{{ item.name }}</p></li>
         </ul>
     </div>
@@ -24,7 +27,6 @@ const props = defineProps({
 
 .list-pill ul{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
@@ -49,7 +51,6 @@ const props = defineProps({
     text-shadow: #bb80ff 0px 0px 20px;
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
-    cursor: pointer;
 }
 
 @media (max-width: 600px) {
@@ -60,6 +61,21 @@ const props = defineProps({
 
     .list-pill ul {
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .list-pill ul {
+        font-size: 1rem;
+    }
+
+    .list-pill ul li {
+        padding: 3px 8px;
     }
 }
 </style>

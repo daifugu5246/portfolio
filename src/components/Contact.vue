@@ -142,4 +142,26 @@ const gradeUrl = ref('https://drive.google.com/file/d/1hcAhMdRAlJpBnKLubs5DJgtiB
         font-size: 1.1rem;
     }
 }
+
+@media (max-width: 450px) {
+    .contact{
+        padding: 30px 20px 100px 20px;
+    }
+    .contact h1{
+        font-size: 2rem;
+    }
+    .contact hr {
+        margin: 10px 0px 30px 0px;
+    }
+    .contact-container{
+        font-size: 1.1rem;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+
+    .btn span{
+        font-size: 1rem;
+    }
+}
 </style>

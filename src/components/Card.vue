@@ -93,7 +93,7 @@ const props = defineProps({
     font-size: 1.2rem;
     color: #a6a6a6;
 }
-.card p {
+.card li {
     font-size: 1.2rem;
     margin: 5px 0 5px 0;
 }
@@ -179,12 +179,45 @@ hr {
         font-size: 1.1rem;
         color: #a6a6a6;
     }
-    .card p {
+    .card li {
         font-size: 1.1rem;
         margin: 5px 0 5px 0;
     }
     .tools h4 {
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .card{
+        padding: 15px;
+        row-gap: 20px;
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+        color: #bb80ff;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+        color: #a6a6a6;
+    }
+    .card li {
+        font-size: 1rem;
+        margin: 5px 0 5px 0;
+    }
+    .tools h4 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+         font-size: 0.9rem;
+         padding: 1px 8px;
     }
 }
 </style>

@@ -185,4 +185,20 @@
         width: 200px;
     }
 }
+
+@media (max-width: 450px) {
+    .home{
+        padding: 100px 20px 100px 20px;
+    }
+    .home h1 {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .home h1 span {
+        font-size: 2.2rem;
+    }
+    .home-text h2{
+        font-size: 1.3rem;
+    }
+}
 </style>

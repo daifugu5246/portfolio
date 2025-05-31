@@ -145,4 +145,14 @@ hr {
         font-size: 2.2rem;
     }
 }
+
+@media (max-width: 450px) {
+    .exp {
+        padding: 30px 20px 100px 20px;
+    }
+
+    .exp h1 {
+        font-size: 2rem;
+    }
+}
 </style>

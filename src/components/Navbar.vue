@@ -53,17 +53,30 @@
 
 @media (max-width: 600px){
     .navbar-links a {
-        background: #060606;
-        padding: 5px 0px 5px 0px;
         font-size: 1.2rem;
-        text-decoration: none;
     }
 
     .navbar-links a:hover {
-        color: #bb80ff;
-        text-shadow: #f1f1f1 0px 0px 20px;
         font-size: 1.3rem;
-        transition: font-size 0.5s, color 0.3s;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar{
+        height: 100px;
+        padding: 10px;
+    }
+
+    .navbar-links {
+        gap: 1rem;
+    }
+
+    .navbar-links a {
+        font-size: 1rem;
+    }
+
+    .navbar-links a:hover {
+        font-size: 1.1rem;
     }
 }
 </style>

@@ -184,5 +184,48 @@ hr {
         text-align: center;
     }
 }
+@media (max-width: 450px){
+    .about-me{
+        padding: 30px 20px 100px 20px;
+    }
 
+    .story h1 {
+        font-size: 2rem;
+    }
+
+    .story p {
+        font-size: 1rem;
+        line-height: 2.4rem;
+    }
+
+    .education h1 {
+        font-size: 2rem;
+    }
+
+    .edu-li{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edu-li h3 {
+        color: #f1f1f1;
+        font-size: 1.1rem;
+    }
+
+    .edu-li p {
+        color: #a6a6a6;
+        font-size: 1rem;
+    }
+
+    .kmitl-logo {
+        width: 100px;
+        height: 100px;   
+    }
+
+    .ayw-logo {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+}
 </style>

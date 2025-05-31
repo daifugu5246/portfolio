@@ -36,11 +36,11 @@ const tools = ref([
         </div>
         <div class="languages card">
             <h1>Languages</h1>
-            <ListPill :items="languages" />
+            <ListPill :items="languages" justifyContent="center"/>
         </div>
         <div class="tools card"> 
             <h1>Tools & Framework</h1>
-            <ListPill :items="tools" />
+            <ListPill :items="tools" justifyContent="center"/>
         </div>
     </div>
 </template>
@@ -133,5 +133,19 @@ hr {
     .card h1{
         font-size: 1.8rem;
     }
+}
+
+@media (max-width: 450px) {
+   .skill{
+        padding: 30px 20px 100px 20px;
+    }
+
+    .header h1{
+        font-size: 2rem;
+    }
+
+    .card h1{
+        font-size: 1.5rem;
+    } 
 }
 </style>
